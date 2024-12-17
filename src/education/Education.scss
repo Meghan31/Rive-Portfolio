@@ -1,0 +1,97 @@
+.edu {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .heading {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .education {
+    width: 800px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    margin: 1rem;
+
+    .forrow {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      flex-direction: row;
+
+      .clgname {
+        font-size: 2.5rem;
+        font-weight: 900;
+
+        font-family: "hw";
+      }
+      .place {
+        font-size: 2rem;
+        font-weight: 500;
+        font-family: "hw";
+      }
+    }
+    .forrow1 {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      flex-direction: row;
+
+      .degree {
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: "hw";
+      }
+      .degree:hover {
+        animation: shake 0.5s;
+      }
+
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-5px);
+        }
+        75% {
+          transform: translateX(5px);
+        }
+      }
+      .time {
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: "hw";
+      }
+    }
+    .cgpa {
+      font-size: 1.25rem;
+      font-weight: 700;
+      font-family: "hw";
+    }
+    .courses {
+      font-size: 1.25rem;
+      font-weight: 700;
+      font-family: "hw";
+    }
+  }
+
+  .education:hover {
+    animation: bounce 0.5s;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+}

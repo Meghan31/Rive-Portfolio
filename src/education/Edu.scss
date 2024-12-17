@@ -1,0 +1,27 @@
+.edu {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .heading {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .ucb {
+    // background-color: aquamarine;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+  }
+  .srm {
+    // background-color: rgb(255, 140, 127);
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+  }
+}
