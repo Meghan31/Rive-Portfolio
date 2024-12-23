@@ -3,6 +3,7 @@ import './app.scss';
 import { CareerPage } from './career/CareerPage';
 import Details from './components/hero/Details';
 import Navbar from './components/navbar/navbar';
+import Contact from './contact/Contact';
 import Projects from './projects/Projects';
 // import Projects from "./projects/Projects";
 
@@ -27,7 +28,9 @@ const Home = () => {
 			<section id="Projects" style={{ height: '100vh' }}>
 				<Projects />
 			</section>
-			<section id="Contact" style={{ height: '100vh' }}></section>
+			<section id="Contact" style={{ height: '100vh' }}>
+				<Contact />
+			</section>
 		</div>
 	);
 };

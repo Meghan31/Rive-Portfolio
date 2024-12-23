@@ -42,11 +42,13 @@
 
 // export default Projects;
 import { motion } from 'framer-motion';
+import { Links } from 'react-router-dom';
 import AiMlDev from '../components/rive/projects/AiMlDev';
 import AppDev from '../components/rive/projects/AppDev';
 import DesignDev from '../components/rive/projects/DesignDev';
 import Frog from '../components/rive/projects/Frog';
 import WebDev from '../components/rive/projects/WebDev';
+import Sidebar from '../components/sidebar/Sidebar';
 import './projectsTiles.scss';
 
 const Projects = () => {
@@ -59,6 +61,7 @@ const Projects = () => {
 
 			{/* Foreground */}
 			<div className="foreground">
+				{/* <Sidebar /> */}
 				<div className="projects">
 					<h1>
 						<span>P</span>
