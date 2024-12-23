@@ -1,0 +1,212 @@
+// // .projects {
+// // 	display: flex;
+// // 	flex-direction: column;
+// // 	align-items: center;
+// // 	// padding: 20px;
+
+// // 	h1 {
+// // 		margin-bottom: 5px;
+// // 		margin-top: 20px;
+// // 		font-size: 3.5rem;
+// // 		text-align: center;
+
+// // 		text-shadow: 2px 20px 9px #a29292;
+
+// // 		span {
+// // 			display: inline-block;
+// // 			position: relative;
+// // 			transition: transform 0.3s ease;
+// // 			// 	&:nth-child(1) {
+// // 			// 		color: #681919;
+// // 			// 	} /* Red */
+// // 			// 	&:nth-child(2) {
+// // 			// 		color: #673f17;
+// // 			// 	} /* Orange */
+// // 			// 	&:nth-child(3) {
+// // 			// 		color: #6e6e1a;
+// // 			// 	} /* Yellow */
+// // 			// 	&:nth-child(4) {
+// // 			// 		color: #195b19;
+// // 			// 	} /* Green */
+// // 			// 	&:nth-child(5) {
+// // 			// 		color: #28285f;
+// // 			// 	} /* Blue */
+// // 			// 	&:nth-child(6) {
+// // 			// 		color: #3d1956;
+// // 			// 	} /* Indigo */
+// // 			// 	&:nth-child(7) {
+// // 			// 		color: #1e0b2d;
+// // 			// 	} /* Violet */
+// // 			// 	&:nth-child(8) {
+// // 			// 		color: #3c282b;
+// // 			// 	} /* Pink */
+// // 			&:hover {
+// // 				transform: translateY(-10px);
+// // 			}
+
+// // 			&:hover:hover-up {
+// // 				transform: translateY(10px);
+// // 			}
+// // 		}
+// // 	}
+
+// // 	.folders {
+// // 		// display: flex;
+// // 		// justify-content: center;
+// // 		// align-items: center;
+// // 		// gap: 20px;
+
+// // 		display: grid;
+// // 		grid-template-areas:
+// // 			'top-left top-right'
+// // 			'bottom-left bottom-right';
+// // 	}
+// // }
+
+// .projects {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+
+// 	h1 {
+// 		margin-bottom: 5px;
+// 		margin-top: 20px;
+// 		font-size: 3.5rem;
+// 		text-align: center;
+// 		text-shadow: 2px 20px 9px rgba(162, 146, 146, 0.8);
+
+// 		span {
+// 			display: inline-block;
+// 			position: relative;
+// 			transition: transform 0.3s ease, color 0.3s ease;
+
+// 			// &:nth-child(1) {
+// 			// 	color: #681919;
+// 			// }
+// 			// &:nth-child(2) {
+// 			// 	color: #673f17;
+// 			// }
+// 			// &:nth-child(3) {
+// 			// 	color: #6e6e1a;
+// 			// }
+// 			// &:nth-child(4) {
+// 			// 	color: #195b19;
+// 			// }
+// 			// &:nth-child(5) {
+// 			// 	color: #28285f;
+// 			// }
+// 			// &:nth-child(6) {
+// 			// 	color: #3d1956;
+// 			// }
+// 			// &:nth-child(7) {
+// 			// 	color: #1e0b2d;
+// 			// }
+// 			// &:nth-child(8) {
+// 			// 	color: #3c282b;
+// 			// }
+
+// 			&:hover {
+// 				transform: translateY(-10px);
+// 				color: #000;
+// 			}
+// 		}
+// 	}
+
+// 	.folders {
+// 		display: grid;
+// 		grid-template-areas:
+// 			'top-left top-right'
+// 			'bottom-left bottom-right';
+// 		// gap: 20px;
+
+// 		@media (max-width: 768px) {
+// 			grid-template-areas:
+// 				'top-left'
+// 				'top-right'
+// 				'bottom-left'
+// 				'bottom-right';
+// 			grid-template-columns: 1fr;
+// 		}
+// 	}
+// }
+
+.projects-container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+
+	.background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		overflow: hidden;
+
+		// Ensure Frog remains interactive
+		pointer-events: auto;
+
+		// Frog-specific hover styles (optional, if needed)
+		Frog {
+			transition: transform 0.3s ease, opacity 0.3s ease;
+
+			&:hover {
+				transform: scale(1.1);
+				opacity: 0.9;
+			}
+		}
+	}
+
+	.foreground {
+		position: relative;
+		z-index: 2; // Ensures it stays visually above the background
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		background: transparent; // Allows Frog to be visible
+		pointer-events: none; // Avoid blocking Frog's interactions
+
+		.projects {
+			pointer-events: auto; // Enable interaction with actual content
+
+			h1 {
+				margin-bottom: 5px;
+				margin-top: 20px;
+				font-size: 3.5rem;
+				text-align: center;
+				text-shadow: 2px 20px 9px rgba(162, 146, 146, 0.8);
+
+				span {
+					display: inline-block;
+					position: relative;
+					transition: transform 0.3s ease, color 0.3s ease;
+
+					&:hover {
+						transform: translateY(-10px);
+						color: #000;
+					}
+				}
+			}
+
+			.folders {
+				display: grid;
+				grid-template-areas:
+					'top-left top-right'
+					'bottom-left bottom-right';
+
+				@media (max-width: 768px) {
+					grid-template-areas:
+						'top-left'
+						'top-right'
+						'bottom-left'
+						'bottom-right';
+					grid-template-columns: 1fr;
+				}
+			}
+		}
+	}
+}
