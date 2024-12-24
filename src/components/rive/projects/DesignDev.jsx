@@ -3,7 +3,7 @@ import './Projects.scss';
 export default function DesignDev() {
 	const { rive, RiveComponent } = useRive(
 		{
-			src: 'public/assets/rive/projects/designsdev.riv',
+			src: '/assets/rive/projects/designsdev.riv',
 			stateMachines: 'State Machine 1',
 			autoplay: true,
 		}

@@ -28,13 +28,13 @@ const WebDevPage = () => {
 		{
 			title: 'Real-time Markdown Editor',
 			description: 'A collaborative markdown editor with live previews.',
-			image: 'public/assets/images/web/editor.jpg',
+			image: '/assets/images/web/editor.jpg',
 			link: 'https://github.com/Meghan31/Real-time-Markdown-Editor.git',
 		},
 		{
 			title: 'Chrome Extension',
 			description: 'A lightweight Chrome extension build with React',
-			image: 'public/assets/images/web/extension.jpg',
+			image: '/assets/images/web/extension.jpg',
 			link: 'https://github.com/Meghan31/Chrome-Extension.git',
 		},
 		{

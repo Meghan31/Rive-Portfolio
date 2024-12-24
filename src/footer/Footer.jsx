@@ -5,13 +5,13 @@ const Footer = () => {
 		<div className="footer">
 			<div className="footer-socials">
 				<img
-					src="public/assets/svg/gh.svg"
+					src="/assets/svg/gh.svg"
 					alt="Logo"
 					className="footer-icon"
 					onClick={() => window.open('https://github.com/Meghan31', '_blank')}
 				/>
 				<img
-					src="public/assets/svg/linkedin.svg"
+					src="/assets/svg/linkedin.svg"
 					alt="Logo"
 					className="footer-icon"
 					onClick={() =>
