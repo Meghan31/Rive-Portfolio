@@ -8,26 +8,26 @@ const AppDevPage = () => {
 			title: 'Crypto App',
 			description: 'Track cryptocurrency prices and trends in real-time.',
 			image: '/assets/images/app/crypto.jpg',
-			link: '/projects/crypto-app',
+			link: 'https://github.com/Meghan31/Crypto-App.git',
 		},
 		{
 			title: 'FlutterGPT',
 			description:
 				'An app infused with ChatGPT model for dynamic interactions.',
 			image: '/assets/images/app/gpt.jpg',
-			link: '/projects/fluttergpt',
+			link: 'https://github.com/Meghan31/FlutterGPT.git',
 		},
 		{
 			title: 'Foodie App',
 			description: 'Discover and share delicious food recipes.',
 			image: '/assets/images/app/food.jpg',
-			link: '/projects/foodie-app',
+			link: 'https://github.com/Meghan31/Foodie_app.git',
 		},
 		{
 			title: 'Note Store & File Share App',
 			description: 'Store notes and files, and share them effortlessly.',
 			image: '/assets/images/app/file.jpg',
-			link: '/projects/note-store-file-share',
+			link: 'https://github.com/Meghan31/Note-Store-File-Share.git',
 		},
 		{
 			title: 'Personal Expenses App',
@@ -39,38 +39,38 @@ const AppDevPage = () => {
 			title: 'Shoppers App',
 			description: 'An E-Commerce app for browsing and purchasing products.',
 			image: '/assets/images/app/shop.jpg',
-			link: '/projects/shoppers-app',
+			link: 'https://github.com/Meghan31/Shoppers.git',
 		},
 		{
 			title: 'Superman Space Attack Game',
 			description: 'A thrilling space attack game featuring Superman.',
 			image: '/assets/images/app/superman.jpg',
-			link: '/projects/superman-space-attack',
+			link: 'https://github.com/Meghan31/Superman-Space-Attack.git',
 		},
 		{
 			title: 'Taxi Cab App',
 			description: 'An app for riders and drivers to connect seamlessly.',
 			image: '/assets/images/app/taxi.jpg',
-			link: '/projects/taxi-cab-app',
+			link: 'https://github.com/Meghan31/Cab-rider-app.git',
 		},
 		{
 			title: 'Telegram Bitcoin Bot',
 			description:
 				'A bot for tracking Bitcoin trends and notifications on Telegram.',
 			image: '/assets/images/app/bitcoin.jpg',
-			link: '/projects/telegram-bitcoin-bot',
+			link: 'https://github.com/Meghan31/Telegram_Bitcoin_Bot_flutter.git',
 		},
 		{
 			title: 'TensorFlow Lite with Flutter',
 			description: 'An image recognition app using TensorFlow Lite.',
 			image: '/assets/images/app/tensorflow.jpg',
-			link: '/projects/tensorflow-lite-flutter',
+			link: 'https://github.com/Meghan31/TensorFlow-Lite-with-Flutter.git',
 		},
 		{
 			title: 'Vi-Me App',
 			description: 'A video meeting app, like Zoom, with modern features.',
 			image: '/assets/images/app/vime.jpg',
-			link: '/projects/vi-me-app',
+			link: 'https://github.com/Meghan31/Video-Meet-App.git',
 		},
 	];
 
@@ -102,7 +102,7 @@ const AppDevPage = () => {
 						<div className="project-details">
 							<h3>{project.title}</h3>
 							<p>{project.description}</p>
-							<a href={project.link} className="project-link">
+							<a href={project.link} className="project-link-1">
 								Learn&nbsp;&nbsp;More
 							</a>
 						</div>

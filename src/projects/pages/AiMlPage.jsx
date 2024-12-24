@@ -9,21 +9,21 @@ const AiMlPage = () => {
 			description:
 				'A personalized music recommendation system using collaborative filtering and machine learning.',
 			image: '/assets/images/ai/music.jpg',
-			link: '/projects/music-recommendation-system',
+			link: 'https://github.com/Meghan31/Music-Recommendation-System.git',
 		},
 		{
 			title: 'Breast Cancer Detection System',
 			description:
 				'An AI-driven model for early detection of breast cancer using image analysis and classification techniques.',
 			image: '/assets/images/ai/cancer.jpg',
-			link: '/projects/breast-cancer-detection',
+			link: 'https://github.com/Meghan31/Breast-Cancer-Prediction.git',
 		},
 		{
 			title: 'Smart Hotel Management System',
 			description:
 				'An AI-enhanced hotel management solution for optimizing room allocation and customer service.',
 			image: '/assets/images/ai/hotel.jpg',
-			link: '/projects/hotel-management-system',
+			link: 'https://github.com/Meghan31/Hotel-Management.git',
 		},
 		{
 			title: 'Sign Language Translator',
@@ -62,7 +62,7 @@ const AiMlPage = () => {
 						<div className="project-details">
 							<h3>{project.title}</h3>
 							<p>{project.description}</p>
-							<a href={project.link} className="project-link">
+							<a href={project.link} className="project-link-3">
 								Learn More
 							</a>
 						</div>

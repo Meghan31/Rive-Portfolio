@@ -2,24 +2,6 @@ import './Skills.scss';
 
 const skillsData = [
 	{
-		category: 'Programming Languages',
-		skills: [
-			{ name: 'C', image: 'public/assets/svg/Skills/languages/c.svg' },
-			{ name: 'C++', image: 'public/assets/svg/Skills/languages/cpp.svg' },
-			{ name: 'Dart', image: 'public/assets/svg/Skills/languages/dart.svg' },
-			{ name: 'Java', image: 'public/assets/svg/Skills/languages/java.svg' },
-			{
-				name: 'JavaScript',
-				image: 'public/assets/svg/Skills/languages/js.svg',
-			},
-			{
-				name: 'Typescript',
-				image: 'public/assets/svg/Skills/languages/ts.svg',
-			},
-			{ name: 'Python', image: 'public/assets/svg/Skills/languages/py.svg' },
-		],
-	},
-	{
 		category: 'Tools & Libraries',
 		skills: [
 			{ name: 'AWS RDS', image: 'public/assets/svg/Skills/tools/rds.svg' },
@@ -37,6 +19,24 @@ const skillsData = [
 			{ name: 'TensorFlow', image: 'public/assets/svg/Skills/tools/tf.svg' },
 			{ name: 'Tableau', image: 'public/assets/svg/Skills/tools/tableau.svg' },
 			{ name: 'PowerBI', image: 'public/assets/svg/Skills/tools/powerbi.svg' },
+		],
+	},
+	{
+		category: 'Programming Languages',
+		skills: [
+			{ name: 'C', image: 'public/assets/svg/Skills/languages/c.svg' },
+			{ name: 'C++', image: 'public/assets/svg/Skills/languages/cpp.svg' },
+			{ name: 'Dart', image: 'public/assets/svg/Skills/languages/dart.svg' },
+			{ name: 'Java', image: 'public/assets/svg/Skills/languages/java.svg' },
+			{
+				name: 'JavaScript',
+				image: 'public/assets/svg/Skills/languages/js.svg',
+			},
+			{
+				name: 'Typescript',
+				image: 'public/assets/svg/Skills/languages/ts.svg',
+			},
+			{ name: 'Python', image: 'public/assets/svg/Skills/languages/py.svg' },
 		],
 	},
 	{
@@ -107,7 +107,19 @@ const skillsData = [
 const Skills = () => {
 	return (
 		<div className="skills-container">
-			<h1 className="skills-title">My Technical Skills</h1>
+			{/* <img
+				src="public/assets/images/skills.jpg"
+				alt="Skills"
+				className="skills-image"
+			/> */}
+			<h1>
+				<span>S</span>
+				<span>k</span>
+				<span>i</span>
+				<span>l</span>
+				<span>l</span>
+				<span>s</span>
+			</h1>
 			<div className="skills-grid">
 				{skillsData.map((skillCategory, index) => (
 					<div className="skill-category" key={index}>
