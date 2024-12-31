@@ -3,6 +3,7 @@ import GitHub from '../rive/social_media/GitHub';
 import Linkedin from '../rive/social_media/Linkedin';
 import Resume from '../rive/social_media/Resume';
 import './details.scss';
+import ToDo from './ToDo';
 
 const Details = () => {
 	return (
@@ -10,13 +11,13 @@ const Details = () => {
 			{/* <p class="section-text-p1">Hello, I'm</p> */}
 			<img src="assets/images/Whitehello.jpg" alt="Logo" className="hello-im" />
 			<Name />
-			<p className="section-text-p2">
+			{/* <p className="section-text-p2">
 				I&apos;m a Developer / Designer / Student
-			</p>
-			{/* <SocialMedia />
-      <GitHub />
-      <Linkedin />
-      <Resume /> */}
+			</p> */}
+			<div>
+				<ToDo />
+			</div>
+			{/* SocialMedia  */}
 			<div className="buttons">
 				<GitHub />
 				<Linkedin />

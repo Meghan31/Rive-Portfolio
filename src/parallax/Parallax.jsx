@@ -1,4 +1,3 @@
-import React from 'react';
 import HC from '../components/rive/parallax/HC';
 
 const Parallax = () => {

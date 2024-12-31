@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { About } from './about/About';
 import './app.scss';
 import { CareerPage } from './career/CareerPage';
@@ -7,9 +8,29 @@ import Contact from './contact/Contact';
 import Footer from './footer/Footer';
 import Parallax from './parallax/Parallax';
 import Projects from './projects/Projects';
+import ResponselessScreen from './ResponselessScreen';
 import Skills from './skills/Skills';
 
+// C4E7FF
+
 const Home = () => {
+	const [isLaptop, setIsLaptop] = useState(true);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setIsLaptop(window.innerWidth >= 1080); // Adjust breakpoint as needed
+		};
+
+		handleResize(); // Check on initial load
+		window.addEventListener('resize', handleResize);
+
+		return () => window.removeEventListener('resize', handleResize);
+	}, []);
+
+	if (!isLaptop) {
+		return <ResponselessScreen />;
+	}
+
 	return (
 		<div>
 			<section id="Home" style={{ height: '100vh' }}>
@@ -29,7 +50,7 @@ const Home = () => {
 			<section id="Career" style={{}}>
 				<CareerPage />
 			</section>
-			<section id="Projects" style={{ height: '100vh' }}>
+			<section id="Projects" style={{}}>
 				<Projects />
 			</section>
 			<section id="Footer" style={{}}>

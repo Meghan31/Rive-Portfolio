@@ -60,12 +60,24 @@ h1 {
 }
 
 .category-title {
-	font-size: 1.4rem;
+	// font-size: 1.4rem;
 	color: $text-color;
 	margin-bottom: 1rem;
 	border-bottom: 2px solid $primary-color;
 	display: inline-block;
 	padding-bottom: 0.5rem;
+
+	font-size: 1.2rem;
+
+	@media (min-width: 1201px) {
+		font-size: 1.4rem;
+		transition: font-size 0.3s ease;
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 1.2rem;
+		transition: font-size 0.3s ease;
+	}
 }
 
 .skill-list {
@@ -99,6 +111,14 @@ h1 {
 }
 
 .skill-name {
+	@media (min-width: 1201px) {
+		font-size: 1rem;
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 0.8rem;
+	}
+
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
