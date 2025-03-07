@@ -9,17 +9,17 @@
 .rive-resume {
 	width: 300px;
 	height: 150px;
-	cursor: pointer;
+	// cursor: pointer;
 }
 .rive-linkedin {
 	width: 100px;
 	height: 100px;
-	cursor: pointer;
+	// cursor: pointer;
 }
 .rive-github {
 	width: 100px;
 	height: 75px;
-	cursor: pointer;
+	// cursor: pointer;
 }
 .edu-button {
 	width: 900px;
@@ -31,23 +31,40 @@
 }
 
 .page {
-	width: 650px;
-	height: 600px;
+	// width: 650px;
+	// height: 600px;
+	// @media (max-width: 1400px) {
+	// 	width: 500px;
+	// 	height: 520px;
+	// }
+	@media (max-width: 1351px) {
+		width: 500px;
+		height: 520px;
+	}
+
+	@media (min-width: 1352px) {
+		width: 650px;
+		height: 550px;
+	}
 }
 
 .contact-button {
-	width: 400px;
+	// width: 400px;
 	height: 150px;
 }
 
 .hc {
-	// background-color: #c4e7ff;
-	// position: absolute;
-	// top: 0;
-	// left: 0;
-	// right: 0;
-	// bottom: 0;
-	width: 1300px;
+	// width: 1300px;
 	height: 785px;
 	// z-index: -1;
+}
+
+.error-404 {
+	width: 100vw;
+	height: 100vh;
+
+	@media (min-width: 768px) {
+		width: 100vw;
+		height: 100vh;
+	}
 }

@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import React from 'react';
 import './projectsPage.scss';
 
 const WebDevPage = () => {
@@ -35,7 +34,7 @@ const WebDevPage = () => {
 			title: 'Chrome Extension',
 			description: 'A lightweight Chrome extension build with React',
 			image: '/assets/images/web/extension.jpg',
-			link: 'https://github.com/Meghan31/Chrome-Extension.git',
+			link: 'https://github.com/Meghan31/nostalgia-copy-paste-extension',
 		},
 		{
 			title: 'Educational Quiz App',

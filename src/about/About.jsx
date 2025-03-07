@@ -1,4 +1,3 @@
-import React from 'react';
 import Face from '../components/rive/about/Face.jsx';
 import Page from '../components/rive/about/Page';
 import './about.scss';

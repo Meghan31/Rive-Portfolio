@@ -3,7 +3,7 @@ import './Career.scss';
 export default function Career() {
 	const { RiveComponent } = useRive(
 		{
-			src: '/assets/rive/career/career4.riv',
+			src: '/assets/rive/career/no-bg-career.riv',
 			stateMachines: 'State Machine 1',
 			autoplay: true,
 		},

@@ -1,11 +1,10 @@
 import { useRive } from '@rive-app/react-canvas';
-import React from 'react';
 import '../rive-details.scss';
 
 export default function Resume() {
 	const { RiveComponent } = useRive(
 		{
-			src: '/assets/rive/socials/newbuttonrive.riv',
+			src: '/assets/rive/socials/buttonnocv.riv',
 			stateMachines: 'DownloadButton',
 
 			autoplay: true,
@@ -21,8 +20,8 @@ export default function Resume() {
 			className="rive-resume"
 			onClick={() => {
 				const link = document.createElement('a');
-				link.href = '/assets/Meghasrivardhan-Resume.pdf';
-				link.download = 'Meghasrivardhan_CV.pdf';
+				link.href = '/assets/Meghan-Resume-Overleaf.pdf';
+				link.download = 'Portfolio-Guy-Meghasrivardhan_CV.pdf';
 				link.click();
 			}}
 		>

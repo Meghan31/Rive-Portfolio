@@ -18,6 +18,14 @@ const Footer = () => {
 						window.open('https://www.linkedin.com/in/meghan31/', '_blank')
 					}
 				/>
+				<img
+					src="/assets/svg/Skills/leetcode.svg"
+					alt="Logo"
+					className="footer-icon"
+					onClick={() =>
+						window.open('https://leetcode.com/u/Meghan31/', '_blank')
+					}
+				/>
 			</div>
 
 			<div className="footer-bottom">

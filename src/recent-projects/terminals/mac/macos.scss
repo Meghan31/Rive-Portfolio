@@ -1,0 +1,88 @@
+.full-mac {
+	// background-color: black;
+	// height: 100vh;
+	display: flex;
+	flex-direction: column;
+	// justify-content: center;
+	// align-items: center;
+	gap: 2rem;
+
+	.project-n-mac {
+		background-color: #222222;
+		border-radius: 10px;
+		width: 80%;
+		// margin: 2rem;
+
+		.headings-mac {
+			// border-radius: 20px;
+			width: 100%;
+			margin-left: 20px;
+			display: flex;
+			flex-direction: row;
+			justify-content: start;
+			align-items: center;
+			gap: 13rem;
+
+			.dots-mac {
+				display: flex;
+				flex-direction: row;
+				gap: 1rem;
+				font-size: 1.5rem;
+				font-family: monospace;
+			}
+
+			.name-mac {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+
+			.title-mac {
+				margin: 10px;
+				font-size: 1.5rem;
+				// font-weight: 600;
+				// color: #095018;
+				color: whitesmoke;
+				font-family: monospace;
+			}
+		}
+
+		.description-mac {
+			padding-top: 10px;
+			padding-left: 4px;
+			background-color: #201c1c;
+			display: flex;
+			flex-direction: row;
+			justify-content: start;
+			// gap: 2rem;
+			font-size: 1rem;
+			font-family: monospace;
+
+			p {
+				font-family: monospace;
+			}
+
+			.points-mac {
+				display: flex;
+				flex-direction: column;
+				color: white !important;
+			}
+		}
+
+		.tech-mac {
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			background-color: #201c1c;
+			padding-top: 10px;
+			padding-bottom: 15px;
+			padding-left: 4px;
+
+			p {
+				font-size: 1rem;
+				// font-weight: 600;
+				color: white !important;
+				font-family: monospace;
+			}
+		}
+	}
+}

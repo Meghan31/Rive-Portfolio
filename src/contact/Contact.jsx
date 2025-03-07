@@ -21,7 +21,7 @@ const variants = {
 
 const Contact = () => {
 	const formRef = useRef();
-	const [error, setError] = useState(false);
+	const [setError] = useState(false);
 	const [success, setSuccess] = useState(false);
 	const [showPopup, setShowPopup] = useState(false);
 	const [popupMessage, setPopupMessage] = useState('');
@@ -55,7 +55,7 @@ const Contact = () => {
 					setShowPopup(true);
 					setTimeout(() => setShowPopup(false), 3000);
 				},
-				(error) => {
+				() => {
 					setPopupMessage('Something went wrong...');
 					setError(true);
 					setShowPopup(true);
