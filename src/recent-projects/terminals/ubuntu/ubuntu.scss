@@ -1,75 +1,385 @@
-.full {
-	// background-color: black;
-	// height: 100vh;
+// .full {
+// 	// background-color: black;
+// 	// height: 100vh;
+// 	display: flex;
+// 	flex-direction: column;
+// 	// justify-content: center;
+// 	// align-items: center;
+// 	gap: 2rem;
+// 	.project-n {
+// 		background-color: #222222;
+// 		border-radius: 10px;
+// 		width: 80%;
+// 		// margin: 2rem;
+// 		.headings {
+// 			// border-radius: 20px;
+
+// 			// width: 100%;
+// 			margin-left: 20px;
+// 			margin-right: 20px;
+// 			display: flex;
+// 			flex-direction: row;
+// 			// justify-content: start;
+// 			align-items: center;
+// 			justify-content: space-between;
+
+// 			.dots {
+// 				display: flex;
+// 				flex-direction: row;
+// 				gap: 1px;
+// 				font-size: 1.5rem;
+// 				font-family: monospace;
+// 			}
+// 			.title {
+// 				margin: 10px;
+// 				font-size: 1.5rem;
+// 				// font-weight: 600;
+// 				// color: #095018;
+// 				color: whitesmoke;
+// 				font-family: monospace;
+// 			}
+// 		}
+// 		.description {
+// 			padding-top: 10px;
+// 			padding-left: 4px;
+// 			background-color: #300a25;
+// 			display: flex;
+// 			flex-direction: row;
+// 			justify-content: start;
+// 			// gap: 2rem;
+// 			font-size: 1rem;
+// 			color: #279568;
+// 			font-family: monospace;
+
+// 			p {
+// 				font-family: monospace;
+// 			}
+// 			.points {
+// 				display: flex;
+// 				flex-direction: column;
+// 			}
+// 		}
+// 		.tech {
+// 			border-bottom-left-radius: 10px;
+// 			border-bottom-right-radius: 10px;
+// 			background-color: #300a25;
+// 			padding-top: 10px;
+// 			padding-bottom: 15px;
+// 			padding-left: 4px;
+// 			p {
+// 				font-size: 1rem;
+// 				// font-weight: 600;
+// 				color: #279568;
+// 				font-family: monospace;
+// 			}
+// 		}
+// 	}
+// }
+
+.full-ubuntu {
 	display: flex;
 	flex-direction: column;
-	// justify-content: center;
-	// align-items: center;
 	gap: 2rem;
-	.project-n {
-		background-color: #222222;
+	padding: 20px;
+
+	.project-n-ubuntu {
+		background-color: #300a24; /* Ubuntu terminal purple background */
 		border-radius: 10px;
 		width: 80%;
-		// margin: 2rem;
-		.headings {
-			// border-radius: 20px;
+		max-width: 1000px;
+		overflow: hidden;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+		// cursor: move; /* Show it's draggable */
+		transform-origin: top left;
+		transition: box-shadow 0.3s ease;
 
-			width: 100%;
-			margin-left: 20px;
+		&:hover {
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+		}
+
+		.headings-ubuntu {
+			background-color: #3d3d3d; /* Ubuntu header bar gray */
+			padding: 8px 12px;
 			display: flex;
 			flex-direction: row;
-			justify-content: start;
 			align-items: center;
-			gap: 20rem;
+			justify-content: space-between;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
-			.dots {
+			.tabs-ubuntu {
+				display: flex;
+				align-items: center;
+
+				.tab-button-container {
+					display: flex;
+					flex-direction: row;
+
+					.tab-button {
+						background: #373637;
+						height: 32px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						padding: 0 12px;
+
+						&:first-child {
+							border-top-left-radius: 5px;
+							border-bottom-left-radius: 5px;
+							padding-left: 15px;
+						}
+
+						&:last-child {
+							border-top-right-radius: 5px;
+							border-bottom-right-radius: 5px;
+							padding-right: 15px;
+						}
+
+						.tab-icon {
+							height: 18px;
+							width: 22px;
+							color: white;
+						}
+					}
+				}
+			}
+
+			.title-container {
+				flex: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.title-ubuntu {
+					margin: 0;
+					font-size: 16px;
+					color: #eeeeee;
+					font-family: 'Ubuntu', 'Ubuntu Mono', sans-serif;
+					font-weight: 400;
+				}
+
+				.github-icon {
+					margin-left: 10px;
+					margin-top: 2px;
+					height: 24px;
+					width: 24px;
+					color: whitesmoke;
+					cursor: pointer;
+					transition: transform 0.2s ease;
+
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+			}
+
+			.window-controls {
 				display: flex;
 				flex-direction: row;
-				gap: 1rem;
-				font-size: 1.5rem;
-				font-family: monospace;
-			}
-			.title {
-				margin: 10px;
-				font-size: 1.5rem;
-				// font-weight: 600;
-				// color: #095018;
-				color: whitesmoke;
-				font-family: monospace;
+				align-items: center;
+				gap: 8px;
+
+				.control-button {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					cursor: pointer;
+					transition: opacity 0.2s ease;
+
+					&:hover {
+						opacity: 0.8;
+					}
+
+					&.minimize {
+						.control-icon {
+							height: 20px;
+							width: 36px;
+						}
+					}
+
+					&.maximize {
+						.control-icon {
+							height: 22px;
+							width: 22px;
+						}
+					}
+
+					&.close {
+						position: relative;
+						width: 22px;
+						height: 22px;
+						margin-right: 6px;
+
+						.close-circle {
+							position: absolute;
+							width: 10px;
+							height: 10px;
+							border-radius: 50%;
+							background-color: white;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							z-index: 1;
+						}
+
+						.close-icon {
+							position: absolute;
+							height: 22px;
+							width: 22px;
+							z-index: 2;
+						}
+					}
+				}
 			}
 		}
-		.description {
-			padding-top: 10px;
-			padding-left: 4px;
-			background-color: #300a25;
+
+		.terminal-content {
+			padding: 10px 16px;
+			background-color: #300a24;
+		}
+
+		.prompt-line {
 			display: flex;
 			flex-direction: row;
-			justify-content: start;
-			// gap: 2rem;
-			font-size: 1rem;
-			color: #279568;
-			font-family: monospace;
+			align-items: center;
+			font-family: 'Ubuntu Mono', monospace;
+			font-size: 15px;
+			margin-bottom: 12px;
 
-			p {
-				font-family: monospace;
+			.username {
+				color: #4e9a06; /* Ubuntu green */
+				margin: 0;
 			}
-			.points {
-				display: flex;
-				flex-direction: column;
+
+			.separator {
+				color: #ffffff;
+				margin: 0 4px;
+			}
+
+			.directory {
+				color: #3465a4; /* Ubuntu blue */
+				margin: 0;
+			}
+
+			.prompt {
+				color: #ffffff;
+				margin: 0 4px 0 0;
+			}
+
+			.command {
+				color: #cccccc;
+				margin: 0;
+				font-style: italic;
 			}
 		}
-		.tech {
-			border-bottom-left-radius: 10px;
-			border-bottom-right-radius: 10px;
-			background-color: #300a25;
-			padding-top: 10px;
-			padding-bottom: 15px;
-			padding-left: 4px;
+
+		.output-section {
+			padding: 8px 0 16px;
+			color: #ffffff;
+
+			.project-description {
+				margin-bottom: 16px;
+				font-family: 'Ubuntu Mono', monospace;
+				font-size: 15px;
+				line-height: 1.4;
+
+				.section-header {
+					color: #4e9a06; /* Ubuntu green */
+					font-weight: bold;
+					margin-bottom: 6px;
+					display: inline-block;
+				}
+
+				.section-text {
+					margin: 0;
+					white-space: pre-wrap;
+				}
+			}
+		}
+
+		.tech-section {
+			padding: 8px 0 10px;
+			border-top: 1px dotted rgba(255, 255, 255, 0.1);
+
 			p {
-				font-size: 1rem;
-				// font-weight: 600;
-				color: #279568;
-				font-family: monospace;
+				font-size: 15px;
+				color: #cc7832; /* Orange for tech */
+				font-family: 'Ubuntu Mono', monospace;
+				margin: 0;
+				line-height: 1.4;
+			}
+		}
+	}
+}
+
+/* Terminal blinking cursor effect */
+@keyframes blink {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+
+// .prompt-line::after {
+// 	content: '|';
+// 	color: #ffffff;
+// 	animation: blink 1s step-end infinite;
+// 	margin-left: 4px;
+// 	font-weight: 100;
+// 	opacity: 0.7;
+// }
+
+/* Subtle appearance animation */
+@keyframes terminal-appear {
+	0% {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.project-n-ubuntu {
+	// animation: terminal-appear 0.3s ease-out forwards;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+	.full-ubuntu {
+		.project-n-ubuntu {
+			width: 90%;
+
+			.headings-ubuntu {
+				.title-container {
+					.title-ubuntu {
+						font-size: 14px;
+					}
+				}
+
+				.tabs-ubuntu {
+					.tab-button-container {
+						.tab-button {
+							height: 28px;
+							padding: 0 8px;
+						}
+					}
+				}
+
+				.window-controls {
+					gap: 4px;
+				}
+			}
+
+			.prompt-line,
+			.output-section .project-description,
+			.tech-section p {
+				font-size: 13px;
 			}
 		}
 	}

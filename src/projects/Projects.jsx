@@ -32,7 +32,9 @@ const Projects = () => {
 						<div onClick={() => setTimeout(() => window.open('/web'), 1000)}>
 							<WebDev />
 						</div>
-						<div>
+						<div
+						// onClick={() => setTimeout(() => window.open('/design'), 1000)}
+						>
 							<DesignDev />
 						</div>
 						<div onClick={() => setTimeout(() => window.open('/ai'), 1000)}>

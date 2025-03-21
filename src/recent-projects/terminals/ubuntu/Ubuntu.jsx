@@ -1,69 +1,403 @@
+// import Draggable from 'react-draggable';
+// import './ubuntu.scss';
+// const Ubuntu = () => {
+// 	return (
+// 		<div className="full">
+// 			<Draggable defaultPosition={{ x: 100, y: 50 }}>
+// 				<div className="project-n">
+// 					<div className="headings">
+// 						<div className="dots">
+// 							<div
+// 								style={{
+// 									background: '#373637',
+// 									width: '30px',
+// 									height: '30px',
+// 									justifyContent: 'center',
+// 									alignItems: 'center',
+// 									display: 'flex',
+// 									position: 'relative',
+// 									borderTopLeftRadius: '10%',
+// 									borderBottomLeftRadius: '10%',
+// 								}}
+// 							>
+// 								<svg
+// 									xmlns="http://www.w3.org/2000/svg"
+// 									viewBox="0 0 24 24"
+// 									width={25}
+// 									height={25}
+// 									fill="none"
+// 									stroke="white"
+// 									strokeWidth="1"
+// 									strokeLinecap="round"
+// 									strokeLinejoin="round"
+// 								>
+// 									<path d="M6 8 L6 16 L4 16" />
+
+// 									{/* Right vertical line with foot */}
+// 									<path d="M18 8 L18 16 L20 16" />
+
+// 									{/* Rectangular top with curved corners */}
+// 									<path d="M6 8 C6 6, 8 4, 10 4 L14 4 C16 4, 18 6, 18 8" />
+
+// 									{/* Plus symbol - centered and properly sized */}
+// 									<line x1="12" y1="8" x2="12" y2="14" />
+// 									<line x1="9" y1="11" x2="15" y2="11" />
+// 								</svg>
+// 							</div>
+// 							<div
+// 								style={{
+// 									background: '#373637',
+// 									width: '30px',
+// 									height: '30px',
+// 									justifyContent: 'center',
+// 									alignItems: 'center',
+// 									display: 'flex',
+// 									position: 'relative',
+// 									borderTopRightRadius: '10%',
+// 									borderBottomRightRadius: '10%',
+// 								}}
+// 							>
+// 								<img
+// 									src="assets/svg/v.svg"
+// 									alt="Logo"
+// 									style={{
+// 										height: '18px',
+// 										width: '22px',
+// 										color: 'white',
+// 									}}
+// 								/>
+// 							</div>
+// 						</div>
+// 						<div
+// 							className="project-name"
+// 							style={{ display: 'flex', flexDirection: 'row' }}
+// 						>
+// 							<p className="title">CodeSketch: ~</p>
+// 							<img
+// 								src="assets/svg/mac-link.svg"
+// 								alt="Close"
+// 								style={{
+// 									marginTop: '5px',
+// 									height: '30px',
+// 									width: '30px',
+// 									color: 'whitesmoke',
+// 									cursor: 'pointer',
+// 								}}
+// 								onClick={() =>
+// 									window.open('https://github.com/Meghan31/Code-Sketch')
+// 								}
+// 							/>
+// 						</div>
+// 						<div
+// 							className="dots-windows"
+// 							style={{ display: 'flex', flexDirection: 'row' }}
+// 						>
+// 							<img
+// 								src="assets/svg/_.svg"
+// 								alt="Logo"
+// 								style={{
+// 									height: '22px',
+// 									width: '40px',
+// 									color: 'white',
+// 								}}
+// 							/>
+// 							<img
+// 								src="assets/svg/white-box.svg"
+// 								alt="Logo"
+// 								style={{
+// 									height: '25px',
+// 									width: '25px',
+// 									marginRight: '5px',
+// 								}}
+// 							/>
+
+// 							<div
+// 								style={{
+// 									position: 'relative',
+// 									marginRight: '15px',
+// 								}}
+// 							>
+// 								<img
+// 									src="assets/svg/ubuntu-close.svg"
+// 									alt="Logo"
+// 									style={{
+// 										position: 'absolute',
+// 										height: '25px',
+// 										width: '25px',
+// 										zIndex: 2,
+// 									}}
+// 								/>
+// 								<div
+// 									style={{
+// 										position: 'absolute',
+// 										width: '10px',
+// 										height: '10px',
+// 										borderRadius: '50%',
+// 										backgroundColor: 'white',
+// 										margin: '7.5px',
+// 										zIndex: 1,
+// 									}}
+// 								></div>
+// 							</div>
+// 						</div>
+// 					</div>
+// 					<div className="description">
+// 						<p style={{ color: '#279568' }}>
+// 							{'Meghan31/Desktop/github/CodeSketch@Ubuntu'}
+// 						</p>
+// 						<p style={{ color: 'white' }}>{':'}</p>
+// 						<p style={{ color: '#124988' }}>{'~'}</p>
+// 						<p style={{ color: 'white' }}>{'$'}</p>
+
+// 						<span>&nbsp;&nbsp;&nbsp; </span>
+// 						<div className="points">
+// 							<p>
+// 								• Built an innovative real-time, collaborative code editor and
+// 								drawing board, enabling users to seamlessly collaborate on both
+// 								code and visuals in a shared environment, improving workflow and
+// 								creativity.
+// 							</p>
+// 							<br />
+// 							<p>
+// 								• Leveraged WebSockets for efficient, instant updates between
+// 								users, and implemented secure session management protocols to
+// 								ensure data integrity and smooth, uninterrupted collaboration
+// 								across various platforms.
+// 							</p>
+// 						</div>
+// 					</div>
+// 					<div className="tech">
+// 						<p>
+// 							Technologies Used : React, Node.js, Express, WebSockets,
+// 							JavaScript, Collaborative Environment, Git/GitHub, Jest
+// 						</p>
+// 					</div>
+// 				</div>
+// 			</Draggable>
+// 		</div>
+// 	);
+// };
+
+// export default Ubuntu;
+
 import Draggable from 'react-draggable';
 import './ubuntu.scss';
+
 const Ubuntu = () => {
 	return (
-		<div className="full">
-			<Draggable defaultPosition={{ x: 100, y: 50 }}>
-				<div className="project-n">
-					<div className="headings">
-						<div className="dots">
-							<div
-								style={{
-									background: '#FF5E5E',
-									width: '12px',
-									height: '12px',
-									borderRadius: '50%',
-								}}
-							></div>
-							<div
-								style={{
-									background: '#FFC130',
-									width: '12px',
-									height: '12px',
-									borderRadius: '50%',
-								}}
-							></div>
-							<div
-								style={{
-									background: '#279568',
-									width: '12px',
-									height: '12px',
-									borderRadius: '50%',
-								}}
-							></div>
+		<div className="full-ubuntu">
+			<Draggable defaultPosition={{ x: 150, y: 20 }}>
+				<div className="project-n-ubuntu">
+					<div className="headings-ubuntu">
+						<div className="tabs-ubuntu">
+							<div className="tab-button-container">
+								<div className="tab-button">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										width={22}
+										height={22}
+										fill="none"
+										stroke="white"
+										strokeWidth="1"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+									>
+										<path d="M6 8 L6 16 L4 16" />
+										<path d="M18 8 L18 16 L20 16" />
+										<path d="M6 8 C6 6, 8 4, 10 4 L14 4 C16 4, 18 6, 18 8" />
+										<line x1="12" y1="8" x2="12" y2="14" />
+										<line x1="9" y1="11" x2="15" y2="11" />
+									</svg>
+								</div>
+								<div className="tab-button">
+									<img src="assets/svg/v.svg" alt="Logo" className="tab-icon" />
+								</div>
+							</div>
 						</div>
-						<p className="title">CodeSketch: ~</p>
-					</div>
-					<div className="description">
-						<p style={{ color: '#279568' }}>
-							{'Meghan31/Desktop/github/CodeSketch@Ubuntu'}
-						</p>
-						<p style={{ color: 'white' }}>{':'}</p>
-						<p style={{ color: '#124988' }}>{'~'}</p>
-						<p style={{ color: 'white' }}>{'$'}</p>
-
-						<span>&nbsp;&nbsp;&nbsp; </span>
-						<div className="points">
-							<p>
-								• Built an innovative real-time, collaborative code editor and
-								drawing board, enabling users to seamlessly collaborate on both
-								code and visuals in a shared environment, improving workflow and
-								creativity.
+						<div className="title-container">
+							<p
+								className="title-ubuntu"
+								style={{
+									fontSize: '1.2rem',
+								}}
+							>
+								CodeSketch: ~
 							</p>
-							<br />
-							<p>
-								• Leveraged WebSockets for efficient, instant updates between
-								users, and implemented secure session management protocols to
-								ensure data integrity and smooth, uninterrupted collaboration
-								across various platforms.
-							</p>
+							<img
+								src="assets/svg/mac-link.svg"
+								alt="GitHub"
+								className="github-icon"
+								onClick={() =>
+									window.open('https://github.com/Meghan31/Code-Sketch')
+								}
+							/>
+						</div>
+						<div className="window-controls">
+							<div className="control-button minimize">
+								<img
+									src="assets/svg/_.svg"
+									alt="Minimize"
+									className="control-icon"
+								/>
+							</div>
+							<div className="control-button maximize">
+								<img
+									src="assets/svg/white-box.svg"
+									alt="Maximize"
+									className="control-icon"
+								/>
+							</div>
+							<div className="control-button close">
+								<div className="close-circle"></div>
+								<img
+									src="assets/svg/ubuntu-close.svg"
+									alt="Close"
+									className="close-icon"
+								/>
+							</div>
 						</div>
 					</div>
-					<div className="tech">
-						<p>
-							Technologies Used : React, Node.js, Express, WebSockets,
-							JavaScript, Collaborative Environment, Git/GitHub, Jest
-						</p>
+					<div className="terminal-content">
+						<div className="prompt-line">
+							<p
+								className="username"
+								style={{
+									fontFamily: 'monospace',
+								}}
+							>
+								meghan31@ubuntu
+							</p>
+							<p
+								className="separator"
+								style={{
+									fontFamily: 'monospace',
+								}}
+							>
+								:
+							</p>
+							<p
+								className="directory"
+								style={{
+									fontFamily: 'monospace',
+								}}
+							>
+								~/CodeSketch
+							</p>
+							<p
+								className="prompt"
+								style={{
+									fontFamily: 'monospace',
+								}}
+							>
+								$
+							</p>
+							<p
+								className="command"
+								style={{
+									fontFamily: 'monospace',
+								}}
+							>
+								./show-project-info.sh
+							</p>
+						</div>
+						<div className="output-section">
+							<div className="project-description">
+								<div
+									className="section-header"
+									style={{
+										fontFamily: 'monospace',
+									}}
+								>
+									PROJECT
+								</div>
+								<p
+									className="section-text"
+									style={{
+										fontFamily: 'monospace',
+									}}
+								>
+									Built an innovative real-time, collaborative code editor and
+									drawing board, enabling users to seamlessly collaborate on
+									both code and visuals in a shared environment, improving
+									workflow and creativity.
+								</p>
+							</div>
+							<div
+								className="project-description"
+								style={{
+									fontFamily: 'monospace',
+								}}
+							>
+								<div
+									className="section-header"
+									style={{
+										fontFamily: 'monospace',
+									}}
+								>
+									FEATURES
+								</div>
+								<p
+									className="section-text"
+									style={{
+										fontFamily: 'monospace',
+									}}
+								>
+									Leveraged WebSockets for efficient, instant updates between
+									users, and implemented secure session management protocols to
+									ensure data integrity and smooth, uninterrupted collaboration
+									across various platforms.
+								</p>
+							</div>
+						</div>
+						<div className="prompt-line">
+							<p
+								className="username"
+								style={{
+									fontFamily: 'monospace',
+								}}
+							>
+								meghan31@ubuntu
+							</p>
+							<p
+								className="separator"
+								style={{
+									fontFamily: 'monospace',
+								}}
+							>
+								:
+							</p>
+							<p
+								className="directory"
+								style={{
+									fontFamily: 'monospace',
+								}}
+							>
+								~/CodeSketch
+							</p>
+							<p
+								className="prompt"
+								style={{
+									fontFamily: 'monospace',
+								}}
+							>
+								$
+							</p>
+							<p
+								className="command"
+								style={{
+									fontFamily: 'monospace',
+								}}
+							>
+								cat tech-stack.txt
+							</p>
+						</div>
+						<div className="tech-section">
+							<p>
+								Technologies Used: React, Node.js, Express, WebSockets,
+								JavaScript, Collaborative Environment, Git/GitHub, Jest
+							</p>
+						</div>
 					</div>
 				</div>
 			</Draggable>

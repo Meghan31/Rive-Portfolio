@@ -1,0 +1,127 @@
+// .hero {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	justify-content: center;
+// 	// padding: 20px;
+
+// 	.profile-pic {
+// 		width: 200px;
+// 		height: 200px;
+// 		border-radius: 50%;
+// 		background-color: grey;
+// 	}
+// }
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: left;
+	padding: 20px;
+	margin-top: 75px;
+
+	.profile-pic {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background-color: grey;
+	}
+
+	.name-container {
+		cursor: pointer;
+		text-align: center;
+
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 0.5rem;
+			font-weight: bold;
+
+			&.scrambled-text {
+				font-family: 'Big Shoulders Stencil', sans-serif;
+				position: relative;
+				display: inline-block;
+				transition: color 0.3s ease;
+
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: -3px;
+					left: 0;
+					width: 0;
+					height: 3px;
+					background-color: #424243;
+					transition: width 0.3s ease;
+				}
+			}
+		}
+
+		&:hover {
+			.scrambled-text {
+				color: #424243;
+
+				&:after {
+					width: 100%;
+				}
+			}
+		}
+
+		h3 {
+			font-size: 1.25rem;
+			color: #666;
+		}
+	}
+	.social-links {
+		display: flex;
+		justify-content: center;
+		margin-top: 1rem;
+		img {
+			margin: 0 0.5rem;
+			color: #424243;
+			font-size: 1.5rem;
+			transition: color 0.3s ease;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	.resume-download {
+		margin-top: 1rem;
+
+		.Mob-res {
+			background-color: white;
+			color: black;
+			border: 2px solid black;
+			padding: 10px 20px;
+			font-size: 1.4rem;
+			// font-weight: 100;
+			font-family: 'Bytesized', monospace;
+			cursor: pointer;
+			position: relative;
+			overflow: hidden;
+			transition: color 0.3s ease, background-color 0.3s ease;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: black;
+				z-index: 1;
+				transform: translateX(-100%);
+				transition: transform 0.3s ease;
+			}
+
+			&:hover {
+				color: white;
+				background-color: black;
+
+				&:before {
+					transform: translateX(0);
+				}
+			}
+		}
+	}
+}

@@ -1,571 +1,228 @@
-// // import './Skills.scss';
-
-// // const skillsData = [
-// // 	{
-// // 		category: 'Tools & Libraries',
-// // 		skills: [
-// // 			{ name: 'AWS RDS', image: '/assets/svg/Skills/tools/rds.svg' },
-// // 			{ name: 'AWS S3', image: '/assets/svg/Skills/tools/aws.svg' },
-// // 			{ name: 'Docker', image: '/assets/svg/Skills/tools/docker.svg' },
-// // 			{
-// // 				name: 'Git/GitHub',
-// // 				image: '/assets/svg/Skills/tools/github.svg',
-// // 			},
-// // 			{ name: 'Google Cloud', image: '/assets/svg/Skills/tools/gc.svg' },
-// // 			{ name: 'Kubernetes', image: '/assets/svg/Skills/tools/kube.svg' },
-// // 			{ name: 'NPM', image: '/assets/svg/Skills/tools/npm.svg' },
-// // 			{ name: 'Redis', image: '/assets/svg/Skills/tools/redis.svg' },
-// // 			{ name: 'Snowflake', image: '/assets/svg/Skills/tools/sf.svg' },
-// // 			{ name: 'TensorFlow', image: '/assets/svg/Skills/tools/tf.svg' },
-// // 			{ name: 'Tableau', image: '/assets/svg/Skills/tools/tableau.svg' },
-// // 			{ name: 'PowerBI', image: '/assets/svg/Skills/tools/powerbi.svg' },
-// // 		],
-// // 	},
-// // 	{
-// // 		category: 'Programming Languages',
-// // 		skills: [
-// // 			{ name: 'C', image: '/assets/svg/Skills/languages/c.svg' },
-// // 			{ name: 'C++', image: '/assets/svg/Skills/languages/cpp.svg' },
-// // 			{ name: 'Dart', image: '/assets/svg/Skills/languages/dart.svg' },
-// // 			{ name: 'Java', image: '/assets/svg/Skills/languages/java.svg' },
-// // 			{
-// // 				name: 'JavaScript',
-// // 				image: '/assets/svg/Skills/languages/js.svg',
-// // 			},
-// // 			{
-// // 				name: 'Typescript',
-// // 				image: '/assets/svg/Skills/languages/ts.svg',
-// // 			},
-// // 			{ name: 'Python', image: '/assets/svg/Skills/languages/py.svg' },
-// // 		],
-// // 	},
-// // 	{
-// // 		category: 'Frameworks',
-// // 		skills: [
-// // 			{ name: 'Express', image: '/assets/svg/Skills/framework/ex.svg' },
-// // 			{ name: 'Firebase', image: '/assets/svg/Skills/framework/fb.svg' },
-// // 			{
-// // 				name: 'Flutter',
-// // 				image: '/assets/svg/Skills/framework/flutter.svg',
-// // 			},
-// // 			{
-// // 				name: 'ReactJS',
-// // 				image: '/assets/svg/Skills/framework/react.svg',
-// // 			},
-// // 			{ name: 'Redux', image: '/assets/svg/Skills/framework/redux.svg' },
-// // 			{ name: 'NodeJS', image: '/assets/svg/Skills/framework/node.svg' },
-// // 		],
-// // 	},
-// // 	{
-// // 		category: 'Graphic Design',
-// // 		skills: [
-// // 			{
-// // 				name: 'Fresco',
-// // 				image: '/assets/svg/Skills/graphic-design/fr.png',
-// // 			},
-// // 			{
-// // 				name: 'Illustrator',
-// // 				image: '/assets/svg/Skills/graphic-design/ai.svg',
-// // 			},
-// // 			{
-// // 				name: 'Photoshop',
-// // 				image: '/assets/svg/Skills/graphic-design/ps.svg',
-// // 			},
-// // 			{
-// // 				name: 'Procreate',
-// // 				image: '/assets/svg/Skills/graphic-design/Pro.png',
-// // 			},
-// // 			{
-// // 				name: 'Rive',
-// // 				image: '/assets/svg/Skills/graphic-design/rive.svg',
-// // 			},
-// // 		],
-// // 	},
-// // 	{
-// // 		category: 'Database',
-// // 		skills: [
-// // 			{ name: 'Firebase', image: '/assets/svg/Skills/framework/fb.svg' },
-// // 			{
-// // 				name: 'MongoDB',
-// // 				image: '/assets/svg/Skills/database/mongodb.svg',
-// // 			},
-// // 			{ name: 'MySQL', image: '/assets/svg/Skills/database/mysql.svg' },
-
-// // 			{ name: 'Neo4j', image: '/assets/svg/Skills/database/n4j.svg' },
-// // 			{
-// // 				name: 'Oracle SQL',
-// // 				image: '/assets/svg/Skills/database/oraclesql.svg',
-// // 			},
-// // 			{
-// // 				name: 'PostgreSQL',
-// // 				image: '/assets/svg/Skills/database/postgresql.svg',
-// // 			},
-// // 		],
-// // 	},
-// // ];
-
-// // const Skills = () => {
-// // 	return (
-// // 		<div className="skills-container">
-// // 			<h1>
-// // 				<span>S</span>
-// // 				<span>k</span>
-// // 				<span>i</span>
-// // 				<span>l</span>
-// // 				<span>l</span>
-// // 				<span>s</span>
-// // 			</h1>
-// // 			<div className="skills-grid">
-// // 				{skillsData.map((skillCategory, index) => (
-// // 					<div className="skill-category" key={index}>
-// // 						<h2 className="category-title">{skillCategory.category}</h2>
-// // 						<ul className="skill-list">
-// // 							{skillCategory.skills.map((skill, idx) => (
-// // 								<li className="skill-item" key={idx}>
-// // 									<img
-// // 										src={skill.image}
-// // 										alt={skill.name}
-// // 										className="skill-icon"
-// // 									/>
-// // 									<div className="skill-name">{skill.name}</div>
-// // 								</li>
-// // 							))}
-// // 						</ul>
-// // 					</div>
-// // 				))}
-// // 			</div>
-// // 		</div>
-// // 	);
-// // };
-
-// // export default Skills;
-
-// import './Skills.scss';
-
-// const skillsData = [
-// 	{
-// 		category: 'Tools, Libraries & Productivity',
-// 		skills: [
-// 			{ name: 'AWS RDS', image: '/assets/svg/Skills/tools/rds.svg' },
-// 			{ name: 'AWS S3', image: '/assets/svg/Skills/tools/aws.svg' },
-// 			{ name: 'Docker', image: '/assets/svg/Skills/tools/docker.svg' },
-// 			{
-// 				name: 'Git/GitHub',
-// 				image: '/assets/svg/Skills/tools/github.svg',
-// 			},
-// 			{ name: 'Google Cloud', image: '/assets/svg/Skills/tools/gc.svg' },
-// 			{ name: 'Kubernetes', image: '/assets/svg/Skills/tools/kube.svg' },
-// 			{ name: 'NPM', image: '/assets/svg/Skills/tools/npm.svg' },
-// 			{ name: 'Redis', image: '/assets/svg/Skills/tools/redis.svg' },
-// 			{ name: 'Shell/Bash Ubuntu', image: '/assets/svg/Skills/tools/bash.svg' },
-// 			{ name: 'Snowflake', image: '/assets/svg/Skills/tools/sf.svg' },
-// 			{ name: 'TensorFlow', image: '/assets/svg/Skills/tools/tf.svg' },
-// 			{ name: 'Tableau', image: '/assets/svg/Skills/tools/tableau.svg' },
-// 			{ name: 'PowerBI', image: '/assets/svg/Skills/tools/powerbi.svg' },
-// 			{ name: 'Postman', image: '/assets/svg/Skills/tools/postman.svg' },
-// 			{ name: 'Vite', image: '/assets/svg/Skills/tools/vite.svg' },
-// 			{ name: 'Jira', image: '/assets/svg/Skills/tools/jira.svg' },
-// 			{ name: 'Notion', image: '/assets/svg/Skills/tools/notion.svg' },
-// 			{ name: 'Obsidian', image: '/assets/svg/Skills/tools/obsidian.svg' },
-// 		],
-// 	},
-// 	{
-// 		category: 'Programming Languages',
-// 		skills: [
-// 			{ name: 'C', image: '/assets/svg/Skills/languages/c.svg' },
-// 			{ name: 'C++', image: '/assets/svg/Skills/languages/cpp.svg' },
-// 			{ name: 'Dart', image: '/assets/svg/Skills/languages/dart.svg' },
-// 			{ name: 'Go', image: '/assets/svg/Skills/languages/go.svg' },
-// 			{ name: 'HTML', image: '/assets/svg/Skills/languages/html.svg' },
-// 			{ name: 'Java', image: '/assets/svg/Skills/languages/java.svg' },
-// 			{
-// 				name: 'JavaScript',
-// 				image: '/assets/svg/Skills/languages/js.svg',
-// 			},
-// 			{
-// 				name: 'Typescript',
-// 				image: '/assets/svg/Skills/languages/ts.svg',
-// 			},
-// 			{ name: 'Python', image: '/assets/svg/Skills/languages/py.svg' },
-// 			{ name: 'SQL', image: '/assets/svg/Skills/languages/sql.svg' },
-// 			{ name: 'NoSQL', image: '/assets/svg/Skills/languages/nosql.svg' },
-// 		],
-// 	},
-// 	{
-// 		category: 'Frameworks & Testing',
-// 		skills: [
-// 			{ name: 'Angular', image: '/assets/svg/Skills/framework/angular.svg' },
-// 			{ name: 'CSS', image: '/assets/svg/Skills/framework/css.svg' },
-// 			{ name: 'Express', image: '/assets/svg/Skills/framework/ex.svg' },
-// 			{ name: 'Firebase', image: '/assets/svg/Skills/framework/fb.svg' },
-// 			{
-// 				name: 'Flutter',
-// 				image: '/assets/svg/Skills/framework/flutter.svg',
-// 			},
-// 			{
-// 				name: 'ReactJS',
-// 				image: '/assets/svg/Skills/framework/react.svg',
-// 			},
-// 			{ name: 'Redux', image: '/assets/svg/Skills/framework/redux.svg' },
-// 			{ name: 'NodeJS', image: '/assets/svg/Skills/framework/node.svg' },
-// 			{ name: 'GraphQL', image: '/assets/svg/Skills/framework/graphql.svg' },
-// 			{ name: 'Next.js', image: '/assets/svg/Skills/framework/nextjs.svg' },
-// 			{
-// 				name: 'Bootstrap',
-// 				image: '/assets/svg/Skills/framework/bootstrap.svg',
-// 			},
-// 			{ name: 'jQuery', image: '/assets/svg/Skills/framework/jquery.svg' },
-// 			{
-// 				name: 'React Native',
-// 				image: '/assets/svg/Skills/framework/react-native.svg',
-// 			},
-// 			{
-// 				name: 'Tailwind CSS',
-// 				image: '/assets/svg/Skills/framework/tailwind.svg',
-// 			},
-// 			{ name: 'SCSS', image: '/assets/svg/Skills/framework/scss.svg' },
-// 			{ name: 'ShadCN/UI', image: '/assets/svg/Skills/framework/shadcn.svg' },
-// 			{ name: 'GSAP', image: '/assets/svg/Skills/framework/gsap.svg' },
-// 			{ name: 'Jest', image: '/assets/svg/Skills/framework/jest.svg' },
-// 			{ name: 'Cypress', image: '/assets/svg/Skills/framework/cypress.svg' },
-// 			{
-// 				name: 'GitHub Actions',
-// 				image: '/assets/svg/Skills/framework/github-actions.svg',
-// 			},
-// 			{
-// 				name: 'GitLab CI/CD',
-// 				image: '/assets/svg/Skills/framework/gitlab.svg',
-// 			},
-// 		],
-// 	},
-// 	{
-// 		category: 'UI/UX & Design',
-// 		skills: [
-// 			{ name: 'Figma', image: '/assets/svg/Skills/graphic-design/figma.svg' },
-// 			{
-// 				name: 'Fresco',
-// 				image: '/assets/svg/Skills/graphic-design/fr.png',
-// 			},
-// 			{
-// 				name: 'Illustrator',
-// 				image: '/assets/svg/Skills/graphic-design/ai.svg',
-// 			},
-// 			{
-// 				name: 'Lottie',
-// 				image: '/assets/svg/Skills/graphic-design/lottie.svg',
-// 			},
-// 			{
-// 				name: 'Photoshop',
-// 				image: '/assets/svg/Skills/graphic-design/ps.svg',
-// 			},
-// 			{
-// 				name: 'Procreate',
-// 				image: '/assets/svg/Skills/graphic-design/Pro.png',
-// 			},
-// 			{
-// 				name: 'Rive',
-// 				image: '/assets/svg/Skills/graphic-design/rive.svg',
-// 			},
-// 		],
-// 	},
-// 	{
-// 		category: 'Databases',
-// 		skills: [
-// 			{ name: 'Firebase', image: '/assets/svg/Skills/framework/fb.svg' },
-// 			{
-// 				name: 'MongoDB',
-// 				image: '/assets/svg/Skills/database/mongodb.svg',
-// 			},
-// 			{ name: 'MySQL', image: '/assets/svg/Skills/database/mysql.svg' },
-// 			{ name: 'Neo4j', image: '/assets/svg/Skills/database/n4j.svg' },
-// 			{
-// 				name: 'Oracle SQL',
-// 				image: '/assets/svg/Skills/database/oraclesql.svg',
-// 			},
-// 			{
-// 				name: 'PostgreSQL',
-// 				image: '/assets/svg/Skills/database/postgresql.svg',
-// 			},
-// 			{
-// 				name: 'SQLite',
-// 				image: '/assets/svg/Skills/database/sqlite.svg',
-// 			},
-// 		],
-// 	},
-// ];
-
-// const Skills = () => {
-// 	return (
-// 		<div className="skills-container">
-// 			<h1>
-// 				<span>S</span>
-// 				<span>k</span>
-// 				<span>i</span>
-// 				<span>l</span>
-// 				<span>l</span>
-// 				<span>s</span>
-// 			</h1>
-// 			<div className="skills-grid">
-// 				{skillsData.map((skillCategory, index) => (
-// 					<div className="skill-category" key={index}>
-// 						<h2 className="category-title">{skillCategory.category}</h2>
-// 						<ul className="skill-list">
-// 							{skillCategory.skills.map((skill, idx) => (
-// 								<li className="skill-item" key={idx}>
-// 									<img
-// 										src={skill.image}
-// 										alt={skill.name}
-// 										className="skill-icon"
-// 									/>
-// 									<div className="skill-name">{skill.name}</div>
-// 								</li>
-// 							))}
-// 						</ul>
-// 					</div>
-// 				))}
-// 			</div>
-// 		</div>
-// 	);
-// };
-
-// export default Skills;
-
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './Skills.scss';
 
-const skillsData = [
-	{
-		category: 'Tools, Libraries & Productivity',
-		skills: [
-			{ name: 'AWS RDS', image: '/assets/svg/Skills/tools/rds.svg' },
-			{ name: 'AWS S3', image: '/assets/svg/Skills/tools/aws.svg' },
-			{ name: 'Docker', image: '/assets/svg/Skills/tools/docker.svg' },
-			{
-				name: 'Git/GitHub',
-				image: '/assets/svg/Skills/tools/github.svg',
-			},
-			{ name: 'Google Cloud', image: '/assets/svg/Skills/tools/gc.svg' },
-			{ name: 'Kubernetes', image: '/assets/svg/Skills/tools/kube.svg' },
-			{ name: 'NPM', image: '/assets/svg/Skills/tools/npm.svg' },
-			{ name: 'Redis', image: '/assets/svg/Skills/tools/redis.svg' },
-			{ name: 'Shell/Bash', image: '/assets/svg/Skills/tools/bash.svg' },
-			{ name: 'Snowflake', image: '/assets/svg/Skills/tools/sf.svg' },
-			{ name: 'TensorFlow', image: '/assets/svg/Skills/tools/tf.svg' },
-			{ name: 'Tableau', image: '/assets/svg/Skills/tools/tableau.svg' },
-			{ name: 'PowerBI', image: '/assets/svg/Skills/tools/powerbi.svg' },
-			{ name: 'Postman', image: '/assets/svg/Skills/tools/postman.svg' },
-			{ name: 'Vite', image: '/assets/svg/Skills/tools/vite.svg' },
-			{ name: 'Jira', image: '/assets/svg/Skills/tools/jira.svg' },
-			{ name: 'Notion', image: '/assets/svg/Skills/tools/notion.svg' },
-			{ name: 'Obsidian', image: '/assets/svg/Skills/tools/obsidian.svg' },
+const Skills = () => {
+	const [activeCategory, setActiveCategory] = useState('languages');
+	const skillsRef = useRef(null);
+
+	// Skills data organized by categories
+	const skillsData = {
+		languages: [
+			{ name: 'C', icon: '/assets/svg/Skills/languages/c.svg' },
+			{ name: 'C++', icon: '/assets/svg/Skills/languages/cpp.svg' },
+			{ name: 'Dart', icon: '/assets/svg/Skills/languages/dart.svg' },
+			{ name: 'Go', icon: '/assets/svg/Skills/languages/go.svg' },
+			{ name: 'HTML', icon: '/assets/svg/Skills/languages/html.svg' },
+			{ name: 'Java', icon: '/assets/svg/Skills/languages/java.svg' },
+			{ name: 'JavaScript', icon: '/assets/svg/Skills/languages/js.svg' },
+			{ name: 'Typescript', icon: '/assets/svg/Skills/languages/ts.svg' },
+			{ name: 'Python', icon: '/assets/svg/Skills/languages/py.svg' },
 		],
-	},
-	{
-		category: 'Programming Languages',
-		skills: [
-			{ name: 'C', image: '/assets/svg/Skills/languages/c.svg' },
-			{ name: 'C++', image: '/assets/svg/Skills/languages/cpp.svg' },
-			{ name: 'Dart', image: '/assets/svg/Skills/languages/dart.svg' },
-			{ name: 'Go', image: '/assets/svg/Skills/languages/go.svg' },
-			{ name: 'HTML', image: '/assets/svg/Skills/languages/html.svg' },
-			{ name: 'Java', image: '/assets/svg/Skills/languages/java.svg' },
-			{
-				name: 'JavaScript',
-				image: '/assets/svg/Skills/languages/js.svg',
-			},
-			{
-				name: 'Typescript',
-				image: '/assets/svg/Skills/languages/ts.svg',
-			},
-			{ name: 'Python', image: '/assets/svg/Skills/languages/py.svg' },
-			// { name: 'SQL', image: '/assets/svg/Skills/languages/sql.svg' },
-			// { name: 'NoSQL', image: '/assets/svg/Skills/languages/nosql.svg' },
+		tools: [
+			{ name: 'AWS RDS', icon: '/assets/svg/Skills/tools/rds.svg' },
+			{ name: 'AWS S3', icon: '/assets/svg/Skills/tools/aws.svg' },
+			{ name: 'Docker', icon: '/assets/svg/Skills/tools/docker.svg' },
+			{ name: 'Git/GitHub', icon: '/assets/svg/Skills/tools/github.svg' },
+			{ name: 'Google Cloud', icon: '/assets/svg/Skills/tools/gc.svg' },
+			{ name: 'Kubernetes', icon: '/assets/svg/Skills/tools/kube.svg' },
+			{ name: 'NPM', icon: '/assets/svg/Skills/tools/npm.svg' },
+			{ name: 'Redis', icon: '/assets/svg/Skills/tools/redis.svg' },
+			{ name: 'Shell/Bash', icon: '/assets/svg/Skills/tools/bash.svg' },
+			{ name: 'Snowflake', icon: '/assets/svg/Skills/tools/snowflake.svg' },
+			{ name: 'TensorFlow', icon: '/assets/svg/Skills/tools/tf.svg' },
+			{ name: 'Tableau', icon: '/assets/svg/Skills/tools/tableau.svg' },
+			{ name: 'PowerBI', icon: '/assets/svg/Skills/tools/powerbi.svg' },
+			{ name: 'Postman', icon: '/assets/svg/Skills/tools/postman.svg' },
+			{ name: 'Vite', icon: '/assets/svg/Skills/tools/vite.svg' },
+			{ name: 'Jira', icon: '/assets/svg/Skills/tools/jira.svg' },
+			{ name: 'Notion', icon: '/assets/svg/Skills/tools/notion.svg' },
+			{ name: 'Obsidian', icon: '/assets/svg/Skills/tools/obsidian.svg' },
 		],
-	},
-	{
-		category: 'Frameworks & Testing',
-		skills: [
-			{ name: 'Angular', image: '/assets/svg/Skills/framework/angular.svg' },
-			{ name: 'CSS', image: '/assets/svg/Skills/framework/css.svg' },
-			{ name: 'Express', image: '/assets/svg/Skills/framework/ex.svg' },
-			{ name: 'Firebase', image: '/assets/svg/Skills/framework/fb.svg' },
-			{
-				name: 'Flutter',
-				image: '/assets/svg/Skills/framework/flutter.svg',
-			},
-			{
-				name: 'ReactJS',
-				image: '/assets/svg/Skills/framework/react.svg',
-			},
-			{ name: 'Redux', image: '/assets/svg/Skills/framework/redux.svg' },
-			{ name: 'NodeJS', image: '/assets/svg/Skills/framework/node.svg' },
-			{ name: 'GraphQL', image: '/assets/svg/Skills/framework/graphql.svg' },
-			{ name: 'Next.js', image: '/assets/svg/Skills/framework/nextjs.svg' },
-			{
-				name: 'Bootstrap',
-				image: '/assets/svg/Skills/framework/bootstrap.svg',
-			},
-			// { name: 'jQuery', image: '/assets/svg/Skills/framework/jquery.svg' },
+		frameworks: [
+			{ name: 'Angular', icon: '/assets/svg/Skills/framework/angular.svg' },
+			{ name: 'CSS', icon: '/assets/svg/Skills/framework/css.svg' },
+			{ name: 'Express', icon: '/assets/svg/Skills/framework/ex.svg' },
+			{ name: 'Flutter', icon: '/assets/svg/Skills/framework/flutter.svg' },
+			{ name: 'ReactJS', icon: '/assets/svg/Skills/framework/react.svg' },
+			{ name: 'Redux', icon: '/assets/svg/Skills/framework/redux.svg' },
+			{ name: 'NodeJS', icon: '/assets/svg/Skills/framework/node.svg' },
+			{ name: 'GraphQL', icon: '/assets/svg/Skills/framework/graphql.svg' },
+			{ name: 'Next.js', icon: '/assets/svg/Skills/framework/nextjs.svg' },
+			{ name: 'Bootstrap', icon: '/assets/svg/Skills/framework/bootstrap.svg' },
 			{
 				name: 'React Native',
-				image: '/assets/svg/Skills/framework/react-native.svg',
+				icon: '/assets/svg/Skills/framework/react-native.svg',
 			},
 			{
 				name: 'Tailwind CSS',
-				image: '/assets/svg/Skills/framework/tailwind.svg',
+				icon: '/assets/svg/Skills/framework/tailwind.svg',
 			},
-			{ name: 'SCSS', image: '/assets/svg/Skills/framework/sass.svg' },
-			{ name: 'ShadCN/UI', image: '/assets/svg/Skills/framework/shadcn.svg' },
-			{ name: 'GSAP', image: '/assets/svg/Skills/framework/gsap.svg' },
-			{ name: 'Jest', image: '/assets/svg/Skills/framework/jest.svg' },
-			{ name: 'Cypress', image: '/assets/svg/Skills/framework/cypress.svg' },
-			{
-				name: 'GitHub Actions',
-				image: '/assets/svg/Skills/framework/github-actions.svg',
-			},
-			{
-				name: 'GitLab CI/CD',
-				image: '/assets/svg/Skills/framework/gitlab.svg',
-			},
+			{ name: 'SCSS', icon: '/assets/svg/Skills/framework/sass.svg' },
+			{ name: 'ShadCN/UI', icon: '/assets/svg/Skills/framework/shadcn.svg' },
+			{ name: 'GSAP', icon: '/assets/svg/Skills/framework/gsap.svg' },
 		],
-	},
-	{
-		category: 'UI/UX & Design',
-		skills: [
-			{ name: 'Figma', image: '/assets/svg/Skills/graphic-design/figma.svg' },
-			{
-				name: 'Fresco',
-				image: '/assets/svg/Skills/graphic-design/fr.png',
-			},
-			{
-				name: 'Illustrator',
-				image: '/assets/svg/Skills/graphic-design/ai.svg',
-			},
-			// {
-			// 	name: 'Lottie',
-			// 	image: '/assets/svg/Skills/graphic-design/lottie.svg',
-			// },
-			{
-				name: 'Photoshop',
-				image: '/assets/svg/Skills/graphic-design/ps.svg',
-			},
-			{
-				name: 'Procreate',
-				image: '/assets/svg/Skills/graphic-design/Pro.png',
-			},
-			{
-				name: 'Rive',
-				image: '/assets/svg/Skills/graphic-design/rive.svg',
-			},
-		],
-	},
-	{
-		category: 'Databases',
-		skills: [
-			{ name: 'Firebase', image: '/assets/svg/Skills/framework/fb.svg' },
-			{
-				name: 'MongoDB',
-				image: '/assets/svg/Skills/database/mongodb.svg',
-			},
-			{ name: 'MySQL', image: '/assets/svg/Skills/database/mysql.svg' },
-			{ name: 'Neo4j', image: '/assets/svg/Skills/database/n4j.svg' },
-			{
-				name: 'Oracle SQL',
-				image: '/assets/svg/Skills/database/oraclesql.svg',
-			},
+		databases: [
+			{ name: 'Firebase', icon: '/assets/svg/Skills/framework/fb.svg' },
+			{ name: 'MongoDB', icon: '/assets/svg/Skills/database/mongodb.svg' },
+			{ name: 'MySQL', icon: '/assets/svg/Skills/database/mysql.svg' },
+			{ name: 'Neo4j', icon: '/assets/svg/Skills/database/n4j.svg' },
+			{ name: 'Oracle SQL', icon: '/assets/svg/Skills/database/oraclesql.svg' },
 			{
 				name: 'PostgreSQL',
-				image: '/assets/svg/Skills/database/postgresql.svg',
+				icon: '/assets/svg/Skills/database/postgresql.svg',
 			},
-			{
-				name: 'SQLite',
-				image: '/assets/svg/Skills/database/sqlite.svg',
-			},
+			{ name: 'SQLite', icon: '/assets/svg/Skills/database/sqlite.svg' },
 		],
-	},
-];
-
-const Skills = () => {
-	// State to track which sections are expanded
-	const [expandedSections, setExpandedSections] = useState({});
-
-	// Function to toggle section expansion
-	const toggleSection = (index) => {
-		setExpandedSections({
-			...expandedSections,
-			[index]: !expandedSections[index],
-		});
+		testing: [
+			{ name: 'Jest', icon: '/assets/svg/Skills/framework/jest.svg' },
+			{ name: 'Cypress', icon: '/assets/svg/Skills/framework/cypress.svg' },
+			{
+				name: 'GitHub Actions',
+				icon: '/assets/svg/Skills/framework/github-actions.svg',
+			},
+			{ name: 'GitLab CI/CD', icon: '/assets/svg/Skills/framework/gitlab.svg' },
+		],
+		design: [
+			{ name: 'Figma', icon: '/assets/svg/Skills/graphic-design/figma.svg' },
+			{ name: 'Fresco', icon: '/assets/svg/Skills/graphic-design/fr.png' },
+			{ name: 'Illustrator', icon: '/assets/svg/Skills/graphic-design/ai.svg' },
+			{ name: 'Photoshop', icon: '/assets/svg/Skills/graphic-design/ps.svg' },
+			{ name: 'Procreate', icon: '/assets/svg/Skills/graphic-design/Pro.png' },
+			{ name: 'Rive', icon: '/assets/svg/Skills/graphic-design/rive.svg' },
+		],
 	};
 
-	// Determine if a section should show the expand/collapse button
-	// (large sections with many skills)
-	const shouldShowToggle = (skills) => skills.length > 10;
+	const categories = [
+		{ id: 'languages', name: 'Programming Languages' },
+		{ id: 'tools', name: 'Tools & Libraries' },
+		{ id: 'frameworks', name: 'Frameworks' },
+		{ id: 'testing', name: 'Testing & Deployment' },
+		{ id: 'databases', name: 'Databases' },
+		{ id: 'design', name: 'UI/UX & Design' },
+	];
+
+	// Animate skill items on category change
+	useEffect(() => {
+		if (skillsRef.current) {
+			const skillItems = skillsRef.current.querySelectorAll('.skill-item');
+
+			skillItems.forEach((item, index) => {
+				item.style.animation = 'none';
+				setTimeout(() => {
+					item.style.animation = `fadeIn 0.5s ease forwards ${index * 0.03}s`;
+				}, 10);
+			});
+		}
+	}, [activeCategory]);
 
 	return (
 		<div className="skills-container">
-			<h1>
-				<span>S</span>
-				<span>k</span>
-				<span>i</span>
-				<span>l</span>
-				<span>l</span>
-				<span>s</span>
-			</h1>
-			<div className="skills-grid">
-				{skillsData.map((skillCategory, index) => (
-					<div
-						className={`skill-category ${
-							expandedSections[index] ? 'expanded' : ''
+			<div className="skills-header">
+				<h2
+					style={{
+						fontFamily: 'Bytesized',
+						fontSize: '2.5rem',
+					}}
+				>
+					Technical Proficiency
+				</h2>
+				<p
+					style={{
+						fontFamily: 'Pacifico',
+						fontSize: '1.5rem',
+					}}
+				>
+					A comprehensive overview of my technical toolkit
+				</p>
+			</div>
+
+			<div className="skill-categories">
+				{categories.map((category) => (
+					<button
+						key={category.id}
+						className={`category-btn ${
+							activeCategory === category.id ? 'active' : ''
 						}`}
-						key={index}
+						onClick={() => setActiveCategory(category.id)}
 					>
-						<div className="category-header">
-							<h2 className="category-title">{skillCategory.category}</h2>
-							{shouldShowToggle(skillCategory.skills) && (
-								<button
-									className="toggle-button"
-									onClick={() => toggleSection(index)}
-									aria-label={
-										expandedSections[index]
-											? 'Collapse section'
-											: 'Expand section'
-									}
-								>
-									<svg
-										className={`arrow-icon ${
-											expandedSections[index] ? 'up' : 'down'
-										}`}
-										width="24"
-										height="24"
-										viewBox="0 0 24 24"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M7 10L12 15L17 10"
-											stroke="currentColor"
-											strokeWidth="2"
-											strokeLinecap="round"
-											strokeLinejoin="round"
-										/>
-									</svg>
-								</button>
-							)}
-						</div>
-						<ul className="skill-list">
-							{skillCategory.skills.map((skill, idx) => (
-								<li className="skill-item" key={idx}>
-									<img
-										src={skill.image}
-										alt={skill.name}
-										className="skill-icon"
-									/>
-									<div className="skill-name">{skill.name}</div>
-								</li>
-							))}
-						</ul>
-					</div>
+						{category.name}
+					</button>
 				))}
+			</div>
+
+			<div className="skills-display" ref={skillsRef}>
+				<div className="terminal-header">
+					<div className="terminal-dots">
+						<div className="terminal-dot red"></div>
+						<div className="terminal-dot yellow"></div>
+						<div className="terminal-dot green"></div>
+					</div>
+					<div className="terminal-title">skills.sh</div>
+					<div className="terminal-user">meghan31@MacBook-Pro</div>
+				</div>
+
+				<div className="terminal-content">
+					<div className="command-line">
+						<span
+							className="prompt"
+							style={{
+								fontFamily: 'Menlo',
+							}}
+						>
+							meghan31@MacBook-Pro
+						</span>
+						<span
+							className="separator"
+							style={{
+								fontFamily: 'Menlo',
+							}}
+						>
+							:
+						</span>
+						<span
+							className="directory"
+							style={{
+								fontFamily: 'Menlo',
+							}}
+						>
+							~/skills
+						</span>
+						<span
+							className="separator"
+							style={{
+								fontFamily: 'Menlo',
+							}}
+						>
+							$
+						</span>
+						<span
+							className="command"
+							style={{
+								fontFamily: 'Menlo',
+							}}
+						>
+							{' '}
+							cat {activeCategory}.json
+						</span>
+					</div>
+
+					<div className="skills-grid">
+						{skillsData[activeCategory].map((skill, index) => (
+							<div key={index} className="skill-item">
+								<div className="skill-icon">
+									<img
+										src={skill.icon}
+										alt={skill.name}
+										onError={(e) => {
+											e.target.src = '/assets/svg/Skills/languages/c.svg';
+										}}
+									/>
+								</div>
+								<span className="skill-name">{skill.name}</span>
+							</div>
+						))}
+					</div>
+				</div>
 			</div>
 		</div>
 	);

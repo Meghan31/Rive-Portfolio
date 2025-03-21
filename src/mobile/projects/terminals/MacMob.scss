@@ -1,0 +1,193 @@
+.full-mac-mob {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+
+	.project-n-mac-mob {
+		background-color: #000000; /* macOS Terminal default black background */
+		border-radius: 8px;
+		width: 90%;
+		margin: 0 auto;
+		overflow: hidden;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+		.headings-mac-mob {
+			background: linear-gradient(to bottom, #3a3a3a, #2a2a2a);
+			padding: 8px 10px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+
+			.dots-mac-mob {
+				display: flex;
+				flex-direction: row;
+				gap: 6px;
+
+				.mac-dot-mob {
+					width: 12px;
+					height: 12px;
+					border-radius: 50%;
+					cursor: pointer;
+
+					&.red-mac-mob {
+						background-color: #ff5f56;
+						border: 0.5px solid #e0443e;
+					}
+
+					&.yellow-mac-mob {
+						background-color: #ffbd2e;
+						border: 0.5px solid #dea123;
+					}
+
+					&.green-mac-mob {
+						background-color: #27c93f;
+						border: 0.5px solid #1aab29;
+					}
+
+					&:hover {
+						filter: brightness(0.9);
+					}
+				}
+			}
+
+			.title-container-mac-mob {
+				flex: 1;
+				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: row;
+
+				.title-mac-mob {
+					margin: 0;
+					font-size: 0.85rem;
+					color: #d8d8d8;
+					font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont,
+						sans-serif;
+					font-weight: 400;
+				}
+			}
+
+			.icons-mac-mob {
+				min-width: 18px;
+			}
+		}
+
+		.last-login-mob {
+			font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+			color: #d8d8d8;
+			padding: 10px 12px 4px;
+			margin: 0;
+			font-size: 0.75rem;
+			background-color: #000000;
+		}
+
+		.description-mac-mob {
+			background-color: #000000;
+			display: flex;
+			flex-direction: row;
+			padding: 4px 12px 12px;
+			font-size: 0.8rem;
+			font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+
+			.user-mac-mob {
+				color: #36c346; /* Bright green for username */
+				margin: 0;
+				padding: 0;
+				font-size: 0.8rem;
+			}
+
+			.symbol-mac-mob {
+				color: #d8d8d8; /* White for symbols */
+				margin: 0;
+				padding: 0 3px;
+				font-size: 0.8rem;
+			}
+
+			.path-mac-mob {
+				color: #4aa5eb; /* Light blue for path */
+				margin: 0;
+				padding: 0;
+				font-size: 0.8rem;
+			}
+		}
+
+		.command-mac-mob {
+			background-color: #000000;
+			padding: 0 12px 8px;
+
+			.command-text-mob {
+				color: #d8d8d8;
+				font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+				font-size: 0.8rem;
+				margin: 0;
+			}
+		}
+
+		.points-mac-mob {
+			background-color: #000000;
+			color: #d8d8d8;
+			padding: 8px 12px;
+
+			p {
+				font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+				font-size: 0.8rem;
+				margin: 0;
+				line-height: 1.4;
+
+				.highlight {
+					color: #e6db74; /* Yellow highlight for keywords */
+					font-weight: 500;
+				}
+			}
+		}
+
+		.tech-mac-mob {
+			background-color: #000000;
+			border-bottom-left-radius: 8px;
+			border-bottom-right-radius: 8px;
+			padding: 12px 12px 16px;
+			border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+			p {
+				font-size: 0.8rem;
+				color: #b281eb; /* Light purple for tech list */
+				font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+				margin: 0;
+			}
+		}
+	}
+}
+
+/* Media query for extra small devices */
+@media (max-width: 320px) {
+	.full-mac-mob {
+		.project-n-mac-mob {
+			width: 95%;
+
+			.headings-mac-mob {
+				.title-mac-mob {
+					font-size: 0.75rem;
+				}
+
+				.dots-mac-mob {
+					.mac-dot-mob {
+						width: 10px;
+						height: 10px;
+					}
+				}
+			}
+
+			.last-login-mob,
+			.description-mac-mob,
+			.command-mac-mob .command-text-mob,
+			.points-mac-mob p,
+			.tech-mac-mob p {
+				font-size: 0.7rem;
+			}
+		}
+	}
+}
