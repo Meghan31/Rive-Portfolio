@@ -95,29 +95,21 @@ const Hero = () => {
 					alt="LinkedIn"
 					width={'30px'}
 					onClick={() =>
-						setTimeout(() => {
-							window.open('https://www.linkedin.com/in/Meghan31/');
-						}, 1000)
+						window.open('https://www.linkedin.com/in/Meghan31/', '_blank')
 					}
 				/>
 				<img
 					src="/assets/svg/Skills/tools/github.svg"
 					alt="GitHub"
 					width={'30px'}
-					onClick={() =>
-						setTimeout(() => {
-							window.open('https://github.com/Meghan31');
-						}, 1000)
-					}
+					onClick={() => window.open('https://github.com/Meghan31', '_blank')}
 				/>
 				<img
 					src="/assets/svg/dark-theme/leetcode.svg"
 					alt="LeetCode"
 					width={'30px'}
 					onClick={() =>
-						setTimeout(() => {
-							window.open('https://leetcode.com/Meghan31/');
-						}, 1000)
+						window.open('https://leetcode.com/Meghan31/', '_blank')
 					}
 				/>
 			</div>
