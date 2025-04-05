@@ -13,9 +13,7 @@ const Windows = () => {
 								alt="PowerShell Logo"
 								className="powershell-icon"
 							/>
-							<p className="title-windows">
-								Windows PowerShell - Voting System
-							</p>
+							<p className="title-windows">Windows PowerShell - Mind-Bloom</p>
 						</div>
 						<div className="window-controls">
 							<div className="control-button minimize">
@@ -63,7 +61,7 @@ const Windows = () => {
 							}}
 						>
 							<p className="ps-path">
-								PS C:\Users\Meghan31\Desktop\Voting System&gt;
+								PS C:\Users\Meghan31\Desktop\Mind-Bloom&gt;
 							</p>
 							<span>&nbsp;&nbsp;&nbsp; </span>
 							<p
@@ -78,16 +76,16 @@ const Windows = () => {
 
 						<div className="output-section">
 							<p className="project-point">
-								• Engineered a secure and scalable digital voting platform for
-								local communities using the MERN stack, integrating AWS for
-								cloud storage and Redis for real-time processing, ensuring high
-								performance, data integrity, and seamless user participation.
+								• Architected and implemented a full-stack mental wellness
+								application featuring mood tracking, journaling, and
+								personalized affirmations, resulting in a 45% increase in user
+								engagement and daily journaling consistency
 							</p>
 							<p className="project-point">
-								• Designed and implemented a robust, user-friendly interface
-								with a focus on security and accessibility, leveraging Agile
-								methodologies and tools like Jest and Postman to optimize system
-								reliability and testing.
+								• Developed a secure authentication system with JWT and
+								role-based access control, integrated with PostgreSQL database
+								using Prisma ORM, and deployed on Google Cloud Platform for
+								scalability and 99.9% uptime reliability
 							</p>
 						</div>
 
@@ -100,7 +98,7 @@ const Windows = () => {
 							}}
 						>
 							<p className="ps-path">
-								PS C:\Users\Meghan31\Desktop\Voting System&gt;
+								PS C:\Users\Meghan31\Desktop\Mind-Bloom&gt;
 							</p>
 							<span>&nbsp;&nbsp;&nbsp; </span>
 							<p
@@ -123,8 +121,8 @@ const Windows = () => {
 								>
 									[TECHNOLOGIES]
 								</span>{' '}
-								MongoDB, Express, React, Node.js, AWS, Redis, Full-stack, Agile,
-								Jest, Postman
+								TypeScript, React, Express, PostgreSQL, JWT, Prisma, GCP,
+								TailwindCSS
 							</p>
 						</div>
 					</div>

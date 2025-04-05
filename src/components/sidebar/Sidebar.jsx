@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Links from './links/Links';
-import LockedLinks from './links/LockedLinks';
 import './sidebar.scss';
 import ToggleButton from './toggleButton/ToggleButton';
 

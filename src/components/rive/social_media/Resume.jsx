@@ -20,7 +20,7 @@ export default function Resume() {
 			className="rive-resume"
 			onClick={() => {
 				const link = document.createElement('a');
-				link.href = '/assets/Meghan-Resume-Overleaf.pdf';
+				link.href = '/assets/resume.pdf';
 				link.download = 'Portfolio-Guy-Meghasrivardhan_CV.pdf';
 				link.click();
 			}}

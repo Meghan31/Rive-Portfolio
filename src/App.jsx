@@ -1,127 +1,9 @@
-// // // // import { useEffect, useState } from 'react';
-// // // // import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-// // // // import './app.scss';
-
-// // // // import AnimatedCursor from 'react-animated-cursor';
-// // // // import Home from './Home';
-// // // // import AiMlPage from './projects/pages/AiMlPage';
-// // // // import AppDevPage from './projects/pages/AppDevPage';
-// // // // import DesignDevPage from './projects/pages/DesignDevPage';
-// // // // import WebDevPage from './projects/pages/WebDevPage';
-// // // // import RecentProjects from './recent-projects/RecentProjects';
-// // // // // import Projects from "./projects/Projects";
-
-// // // // const App = () => {
-// // // // 	return (
-// // // // 		<>
-// // // // 			<AnimatedCursor
-// // // // 				innerSize={8}
-// // // // 				outerSize={8}
-// // // // 				color="193, 11, 101"
-// // // // 				outerAlpha={0.2}
-// // // // 				innerScale={0.7}
-// // // // 				outerScale={5}
-// // // // 				clickables={[
-// // // // 					'a',
-// // // // 					'input[type="text"]',
-// // // // 					'input[type="email"]',
-// // // // 					'input[type="number"]',
-// // // // 					'input[type="submit"]',
-// // // // 					'input[type="image"]',
-// // // // 					'label[for]',
-// // // // 					'select',
-// // // // 					'textarea',
-// // // // 					'button',
-// // // // 					'.link',
-// // // // 				]}
-// // // // 			/>
-// // // // 			<Router>
-// // // // 				<Routes>
-// // // // 					<Route path="/" element={<Home />} />
-// // // // 					<Route path="/app" element={<AppDevPage />} />
-// // // // 					<Route path="/web" element={<WebDevPage />} />
-// // // // 					<Route path="/ai" element={<AiMlPage />} />
-// // // // 					<Route path="/design" element={<DesignDevPage />} />
-// // // // 					<Route path="/recent" element={<RecentProjects />} />
-// // // // 					<Route path="*" element={<Home />} />
-// // // // 				</Routes>
-// // // // 			</Router>
-
-// // // // 			<PopupNotification />
-// // // // 		</>
-// // // // 	);
-// // // // };
-
-// // // // export default App;
-
-// // // // const PopupNotification = () => {
-// // // // 	const [visible, setVisible] = useState(true);
-
-// // // // 	useEffect(() => {
-// // // // 		// Reset visibility on reload
-// // // // 		setVisible(true);
-
-// // // // 		// Optional: Hide after a few seconds
-// // // // 		const timer = setTimeout(() => {
-// // // // 			setVisible(false);
-// // // // 		}, 3000); // Hide after 3 seconds
-
-// // // // 		return () => clearTimeout(timer);
-// // // // 	}, []);
-
-// // // // 	const handleClose = () => {
-// // // // 		setVisible(false);
-// // // // 	};
-
-// // // // 	if (!visible) return null;
-
-// // // // 	return (
-// // // // 		<div
-// // // // 			style={{
-// // // // 				position: 'fixed',
-// // // // 				top: '20px',
-// // // // 				left: '50%',
-// // // // 				transform: 'translateX(-50%)',
-// // // // 				backgroundColor: 'rgba(0, 0, 0, 0.8)',
-// // // // 				color: 'white',
-// // // // 				padding: '10px 20px',
-// // // // 				borderRadius: '6px',
-// // // // 				boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
-// // // // 				zIndex: 1000,
-// // // // 				display: 'flex',
-// // // // 				alignItems: 'center',
-// // // // 				justifyContent: 'space-between',
-// // // // 				maxWidth: '90%',
-// // // // 				width: 'auto',
-// // // // 			}}
-// // // // 		>
-// // // // 			<span style={{ fontWeight: 'medium', fontFamily: 'sans-serif' }}>
-// // // // 				Animations await your touch and hover
-// // // // 			</span>
-// // // // 			<button
-// // // // 				onClick={handleClose}
-// // // // 				style={{
-// // // // 					background: 'transparent',
-// // // // 					border: 'none',
-// // // // 					color: 'white',
-// // // // 					fontSize: '16px',
-// // // // 					marginLeft: '16px',
-// // // // 					cursor: 'pointer',
-// // // // 					opacity: '0.7',
-// // // // 				}}
-// // // // 			>
-// // // // 				×
-// // // // 			</button>
-// // // // 		</div>
-// // // // 	);
-// // // // };
-
 import { useEffect, useRef, useState } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './app.scss';
 
 import Home from './Home';
-import AiMlPage from './projects/pages/AiMlPage';
+import AIMLDevPage from './projects/pages/AiMlPage';
 import AppDevPage from './projects/pages/AppDevPage';
 // import DesignDevPage from './projects/pages/DesignDevPage';
 import WebDevPage from './projects/pages/WebDevPage';
@@ -274,7 +156,7 @@ const App = () => {
 					<Route path="/" element={<Home />} />
 					<Route path="/app" element={<AppDevPage />} />
 					<Route path="/web" element={<WebDevPage />} />
-					<Route path="/ai" element={<AiMlPage />} />
+					<Route path="/ai" element={<AIMLDevPage />} />
 					{/* <Route path="/design" element={<DesignDevPage />} /> */}
 					<Route path="/recent" element={<RecentProjects />} />
 					<Route path="*" element={<Home />} />
