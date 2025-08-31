@@ -172,7 +172,7 @@ const ContactMob = () => {
 							</div>
 							<div className="info-content">
 								<h2>Address</h2>
-								<span>695 Manhattan 80303 Boulder CO</span>
+								<span>1350 20th St, Boulder, CO 80302</span>
 							</div>
 						</div>
 						<div

@@ -1,0 +1,12 @@
+.hanger {
+	position: absolute;
+	top: calc(100% - 2rem);
+	left: 50%;
+	transform: translateX(-46%);
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 0;
+	padding: 0;
+	z-index: 11;
+}

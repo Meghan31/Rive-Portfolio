@@ -25,22 +25,24 @@ const Details = () => {
 				<GitHub />
 				<Linkedin />
 				<Resume />
-				<div
+				{/* <div
 					style={{
 						height: '70px',
 						width: '70px',
-						marginTop: '15px',
+						marginTop: '30px',
 					}}
-				>
-					<img
-						src="/assets/svg/leetcode.svg"
-						alt="Logo"
-						className="footer-icon"
-						onClick={() =>
-							window.open('https://leetcode.com/u/Meghan31/', '_blank')
-						}
-					/>
-				</div>
+				> */}
+				<img
+					src="/assets/svg/leetcode.svg"
+					height={49}
+					width={49}
+					alt="Logo"
+					className="footer-icon"
+					onClick={() =>
+						window.open('https://leetcode.com/u/Meghan31/', '_blank')
+					}
+				/>
+				{/* </div> */}
 			</div>
 		</div>
 	);

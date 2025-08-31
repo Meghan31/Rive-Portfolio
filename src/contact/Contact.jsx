@@ -79,11 +79,11 @@ const Contact = () => {
 				</motion.div>
 				<motion.div className="item" variants={variants}>
 					<h2>Address</h2>
-					<span>695 Manhattan 80303 Boulder CO</span>
+					<span>1350 20th St, Boulder, CO 80302</span>
 				</motion.div>
 				<motion.div className="item" variants={variants}>
 					<h2>Phone</h2>
-					<span>+1 9706940036</span>
+					<span>+1 970-694-0036</span>
 				</motion.div>
 			</motion.div>
 			<div className="formContainer">

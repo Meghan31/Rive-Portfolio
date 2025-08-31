@@ -20,8 +20,8 @@ export default function Resume() {
 			className="rive-resume"
 			onClick={() => {
 				const link = document.createElement('a');
-				link.href = '/assets/resume.pdf';
-				link.download = 'Portfolio-Guy-Meghasrivardhan_CV.pdf';
+				link.href = '/assets/MeghaPulakhandam_Resume_2025.pdf';
+				link.download = 'Portfolio-Guy-Megha_CV.pdf';
 				link.click();
 			}}
 		>

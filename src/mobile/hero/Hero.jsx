@@ -115,7 +115,7 @@ const Hero = () => {
 			</div>
 			<div className="resume-download">
 				<a
-					href="/assets/Meghan-Resume-Overleaf.pdf"
+					href="/assets/MeghaPulakhandam_Resume_2025.pdf"
 					download="Portfolio_Guy_Resume_Megha"
 				>
 					<button className="Mob-res">Download Resume</button>
